@@ -15,11 +15,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0.85) 0%,
-    rgba(0, 0, 0, 1) 100%
-  );
+   background: #130fd5e2;
+  
   border-right: 1px solid rgba(255, 255, 255, 0.08); 
 }
 
@@ -45,33 +42,20 @@
 .subtext {
   font-size: 14px;
   line-height: 1.6;
-  color: rgba(255, 255, 255, 0.7);
+  color: #fff;
   margin-bottom: 32px;
-}
-
-.actions {
-  display: flex;
-  gap: 12px;
+  font-family: monospace;
 }
 
 .primary {
-background-color: #007bff;
-  color: #000000;
+background-color: #000000;
+  color: #fff;
   border: none;
   padding: 10px 16px;
   font-size: 14px;
   font-weight: 500;
   cursor: pointer;
-}
-
-.secondary {
-  background: transparent;
-  color: #ffffff;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  padding: 10px 16px;
-  font-size: 14px;
-  font-weight: 500;
-  cursor: pointer;
+  font-family: monospace;
 }
 
 .primary:hover {
@@ -84,5 +68,116 @@ background-color: #007bff;
 
 .right {
   flex: 1;
-  background: #000
+  /* Mesh Gradient Background */
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+}
+
+.heroText {
+  color: black;
+  background-color: white;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 12px 24px;
+  margin-bottom: 40px;
+  font-family:monospace;
+}
+
+/* Market Card Container */
+.marketCard {
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  width: 90%;
+  max-width: 600px;
+  margin-right: 100px;
+}
+
+.marketHeader {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.marketImg {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.marketTitleInfo {
+  flex: 1;
+}
+
+.question {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.4;
+  font-family: monospace;
+}
+
+/* Options container */
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 24px;
+}
+
+/* Single option row */
+.optionRow {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Option text */
+.optionText {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.85);
+  font-family: monospace;
+}
+
+/* Percentage */
+.percent {
+  font-size: 12px;
+  font-weight: 700;
+  color: #ffffff;
+  min-width: 60px;
+  text-align: right;
+}
+
+.steps {
+  width: 90%;
+  max-width: 600px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 120px;
+}
+
+/* Single step */
+.step {
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  padding: 16px 20px;
+}
+
+.logo {
+  height: 420px;
+  width: 700px;
+}
+
+.app {
+  background-color: #fff;
+  color: #000000;
+  font-family: monospace;
+  
 }
